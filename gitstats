@@ -513,7 +513,7 @@ class GitDataCollector(DataCollector):
 			else:
 				blobs_to_read.append((ext,blob_id))
 
-		#Get info abount line count for new blob's that wasn't found in cache
+		#Get info about line count for new blob's that wasn't found in cache
 		pool = Pool(processes=conf['processes'])
 		ext_blob_linecount = pool.map(getnumoflinesinblob, blobs_to_read)
 		pool.terminate()
