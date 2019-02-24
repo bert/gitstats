@@ -781,7 +781,7 @@ class HTMLReportCreator(ReportCreator):
 		#f.write('<h2>Last 12 months</h2>')
 
 		# Weekly activity
-		WEEKS = 32
+		WEEKS = 52
 		f.write(html_header(2, 'Weekly activity'))
 		f.write('<p>Last %d weeks</p>' % WEEKS)
 
